@@ -20,39 +20,79 @@
     </header>
 
     <nav>
-        <section class="navbar-container">
-            <button class="btn-primary">
+        <!-- <section class="nav nav-tabs" id="navbar-container" role="tablist">
+            <button class="nav-link active" role="tab">
                 <h3>PCRs</h3>
             </button>
-            <button>
+            <button class="nav-link bg-light" role="tab">
                 <h3>User</h3>
             </button>
-            <button>
+            <button class="nav-link bg-light" role="tab">
                 <h3>Settings</h3>
             </button>
-            <button>
+            <button class="nav-link bg-light" role="tab">
                 <h3>Reports</h3>
             </button>
-        </section>
+        </section> -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="nav nav-pill">PCR</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn btn-danger">User</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn btn-danger">Settings</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn btn-danger">Reports</button>
+                </a>
+            </li>
+        </ul>
+
     </nav>
 
     <main>
         <section class="side-nav-container">
-            <button class="btn">run form start</button>
-            <button class="btn">dispatch</button>
-            <button class="btn">response</button>
-            <button class="btn">arrival</button>
-            <button class="btn">assessment</button>
-            <button class="btn">treatment</button>
-            <button class="btn">narrative</button>
-            <button class="btn">billing information</button>
-            <button class="btn">signatures</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="btn btn-secondary accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        run form start
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li class="btn btn-danger">times</li>
+                            <li class="btn">unit information</li>
+                            <li class="btn">crew</li>
+                            <li class="btn">dispositions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary">dispatch</button>
+            <button class="btn btn-secondary">response</button>
+            <button class="btn btn-secondary">arrival</button>
+            <button class="btn btn-secondary">assessment</button>
+            <button class="btn btn-secondary">treatment</button>
+            <button class="btn btn-secondary">narrative</button>
+            <button class="btn btn-secondary">billing information</button>
+            <button class="btn btn-secondary">signatures</button>
         </section>
         <section class="form-container">
             <section class="sub-navbar">
-                <button class="">one</button>
-                <button>two</button>
-                <button>three</button>
+                <button class="btn btn-primary">one</button>
+                <button class="btn btn-warning">two</button>
+                <button class="btn btn-purple">three</button>
                 <button>four</button>
                 <button>five</button>
                 <button>six</button>
@@ -64,6 +104,30 @@
                 <label for="second-input">Second text box:</label>
                 <input type="text" name="second" id="second-input" placeholder="this is some text">
 
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                    <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+                </div>
+
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <div class="input-group mb-3">
+                    <button class=" btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
 
                 <div class="test-checks">
                     <h4>check box section</h4>
@@ -85,9 +149,63 @@
                     </div>
                 </div>
 
-                <label for="story">Tell us your story:</label>
-                <textarea id="story" name="story" rows="30" cols="100"
-                    placeholder="You'll never believe this..."></textarea>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item’s accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It’s also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </form>
         </section>

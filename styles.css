@@ -1,9 +1,6 @@
 /* colors I like
 #e4cdff */
 
-/* Bootstrap import */
-
-
 /* ------ reset stuff ------ */
 
 * {
@@ -12,16 +9,18 @@
     font-family: "Courier New", Courier, monospace, Tahoma, sans-serif;
 }
 
-/* button {
+button {
     border: none;
-} */
+}
 
 /* ------------------------- */
+:root {
+    --purple: #6f42c1;    
+}
 
-/* framework stuff */
-
-.nice {
-    border-radius: 6px;
+.btn-purple {
+    background-color: var(--purple);
+    color: #fff;
 }
 
 /* ------------------------- */
@@ -29,45 +28,35 @@
 header {
     background-color: #00d9ff;
     height: 84px;
-
     box-shadow: 0 0px 10px 2px #5a5a5a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header-container {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 img.header-logo {
-    background-color: rgb(255, 0, 251);
+    background-color: var(--purple);
 }
 
-.navbar-container {
+#navbar-container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.navbar-container button {
-    width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
+    background-color: rgb(255, 0, 179);
 }
 
 main {
     width: 100%;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 180px 1fr;
     column-gap: 10px;
     row-gap: 10px;
     height: 100vh;
@@ -85,21 +74,18 @@ main {
 }
 
 .side-nav-container button {
-    padding: 5px;
     margin: 10px 5px;
-    background-color: rgb(236, 42, 42);
 }
 
 .sub-navbar {
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(0, 255, 4);
     display: flex;
     justify-content: space-around;
 }
 
 .sub-navbar button {
-    height: 30px;
-    width: 100px;
+    width: 80px;
 }
 
 .test-checks {
