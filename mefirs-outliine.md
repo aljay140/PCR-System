@@ -1,0 +1,162 @@
+1. run form start
+    - responding crew
+    - responding unit information
+        - EMS unit call sign
+        - EMS Vehicle number
+        - Unit transport and equipment capability
+    - ems times
+        - PSAP Call
+        - unit notified
+        - unit en route
+        - unit arrived on scene
+        - arrived at patient
+        - unit left scene
+        - patient arrived at destination
+        - destination patient transfer of care
+        - unit left destination
+        - unit back in service
+    - dispositions
+        - type of service requested
+        - unit disposition
+        - patient evaluation/care
+        - crew disposition
+        - transport disposition
+        - ems response number
+        - incident number
+2. Dispatch 
+    - dispatch information
+        - dispatch reason
+        - dispatch priority (acuity)
+        - EMD determinant code
+        - emd performed?
+    - incident address
+        - incident location type
+        - base hospita contacted
+        - address
+        - scene cross street
+        - mile post or major roadway
+        - GPS coordinates
+3. response
+    - response to scene
+        - response mode to scene
+            - emergent/non
+        - addl response mode descriptors
+            - lights/no
+        - vehicle dispatch location
+        - vehicle dispatch GPS coordinates
+    - All Delays
+        - preset: no delays
+            - dispatch delay
+            - response delay
+            - scene delay
+            - transport delay
+            - turn around delay
+4. Arrival
+    - scene details
+        - number of patients at scene
+        - patient received from agency
+        - transferred to agency
+        - other agencies involved
+    - patient information
+        - repeat lookup
+        - veteran
+        - homeless
+        - ssn
+        - name, suffix
+        - gender
+        - race
+        - dob
+        - age
+        - language
+        - phone numbers
+    - patient residence
+        - address
+    - other patient residence
+    - patient closest relative
+5. Assessment
+    - patient complaint
+        - complaints
+        - chief complaint anatomic location
+        - cheif complaint organ system
+        - symptom onset
+        - primary symptom
+        - other symptoms
+        - last known well
+        - initial acuity
+        - final acuity
+        - barriers to care
+    - patient assessment
+        - possible injury
+        - cardiac arrest
+        - alcohol/drug
+        - physical assessment
+    - patient history
+        - body weight
+        - length based tape
+        - medical history
+        - pregnancy
+        - medications
+        - allergies rx
+        - allergies enviro
+        - adv directives
+        - history obtained from
+    - vitals signs/stroke assessment
+    - protocols
+    - injury information
+        - cause
+        - mechanism
+        - triage 1 and 2
+        - triage 3 and 4
+    - infections disease
+        - eid code
+        - recent exposure
+        - recent travel
+        - recent intl travel
+        - recent domestic travel
+6. Treatment
+    - medication administration
+        - handtevy
+        - rx admin
+        - controlled substances
+    - procedures
+        - proc performed
+        - airway confirmations
+        - specific things refused
+    - EKG
+        - medical devices
+        - stemis
+    - orders
+        - meds ordered
+        - procedures ordered
+7. agency supp questions
+8. narrative
+    - narrative
+        - primary impression
+        - secondary impression
+        - crew member completing
+        - review requested
+        - notify of outcome data
+        - the box
+    - exposures & ppe
+    - outcomes
+    - hospital outcomes
+9. billing information
+    - insurance information
+        - level of care per protocol
+        - level of service
+        - primary method of payment
+        - als perf and warranted
+        - cms transport indicator
+        - insurance info
+    - supplies
+10. signatures
+    - signatures
+    - PCS
+        - require pcs
+        - billing insurances
+        - transported to closest appropriate facility
+        - why further
+        - transport rel terminal illness
+        - services not at sending
+        - ambulance transport reason code
+        - EMS condition code

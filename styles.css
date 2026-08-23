@@ -1,0 +1,138 @@
+/* colors I like
+#e4cdff */
+
+/* Bootstrap import */
+
+
+/* ------ reset stuff ------ */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace, Tahoma, sans-serif;
+}
+
+/* button {
+    border: none;
+} */
+
+/* ------------------------- */
+
+/* framework stuff */
+
+.nice {
+    border-radius: 6px;
+}
+
+/* ------------------------- */
+
+header {
+    background-color: #00d9ff;
+    height: 84px;
+
+    box-shadow: 0 0px 10px 2px #5a5a5a;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+img.header-logo {
+    background-color: rgb(255, 0, 251);
+}
+
+.navbar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar-container button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(0, 255, 255, 0.216);
+}
+
+.side-nav-container {
+    background-color: rgba(255, 0, 0, 0.216);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav-container button {
+    padding: 5px;
+    margin: 10px 5px;
+    background-color: rgb(236, 42, 42);
+}
+
+.sub-navbar {
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-navbar button {
+    height: 30px;
+    width: 100px;
+}
+
+.test-checks {
+    display: grid;
+    grid-row: 2fr 1fr 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.test-checks h4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.box1 {
+}
+
+.box2 {
+}
+
+.box3 {
+}
+
+.box4 {
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+}
+
+.tester {
+    background-color: rgb(255, 0, 234);
+}
